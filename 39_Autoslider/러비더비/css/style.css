@@ -2,3 +2,190 @@
 ul { list-style:none;}
 a { text-decoration:none;}
 img { border:none;}
+
+
+
+/****************** header ***********************/
+header{
+    width: 100%;
+    height: 235px;
+    position: relative;
+}
+
+.topWrap {
+    width: 100%;
+    height: 103px;
+    background-color: #ffdce6;
+
+}
+
+.top{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url(../img/top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.headerWrap{
+    width: 1200px;
+    height: 122px;
+    margin: 0 auto;
+}
+
+
+.login_ul {
+    float: right;
+}
+
+.login_ul li{
+    float: left;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.login_ul li a{
+    font-size: 11px;
+    color: #666;
+    line-height: 30px;
+}
+
+.login_ul li a span{
+    padding: 0px 5px;
+}
+
+.menuWrap{
+    height: 92px;
+    width: 1200px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.menu li{
+    height: 92px;
+    float: left;
+    margin-right: 69px;
+}
+.menu li:last-child{
+    margin-right: 0px;
+    position: relative;
+    top: 5px;
+
+}
+.menu li a{
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 92px;
+}
+.menu li > ul{display: none;}
+
+/******************** slide *************************/
+
+.slider{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.panel {
+    width: 500%;
+    height: 100%;
+}
+
+.panel >li{
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.panel >li >a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.s1 {background-image: url(../img/main10.jpg);}
+.s2 {background-image: url(../img/main11.jpg);}
+.s3 {background-image: url(../img/main12.jpg);}
+.s4 {background-image: url(../img/main3.jpg);}
+.s5 {background-image: url(../img/main9.jpg);}
+
+
+.btn{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -70px;
+}
+
+.btn li{
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: rgba(0,0,0,0.2);
+    float: left;
+}
+
+.btn li:hover{
+    background-color: darkorange;
+}
+
+.btn .on{
+    background-color: darkorange;
+}
+
+
+.prev{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    margin-top: -27px;
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    margin-top: -27px;
+}
+
+
+/*********************** banner *********************/
+
+.banner {
+    width: 100%;
+    height: 144px;
+    background-color: #f1f1f1;
+}
+
+.banner >ul{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.banner > ul > li{
+    float: left;
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+.banner > ul > li > a > div{
+    float: left;
+    margin-left: 10px;
+}
+
+.banner > ul > li > a >img{float: left;}
+.banner > ul > li > a > div > h1{color: #000; font-size: 20px;}
+.banner > ul > li > a > div > p{color: #666; font-size: 12px;}
