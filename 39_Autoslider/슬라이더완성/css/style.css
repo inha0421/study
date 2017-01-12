@@ -1,0 +1,44 @@
+* { margin:0px;padding:0px;}
+ul { list-style:none;}
+a { text-decoration:none;}
+img { border:none;}
+
+.slider { width:400px; height:300px; margin:0 auto;
+          background-color:aqua; position:relative;
+          overflow:hidden;
+}
+
+.slider .panel { width:400%; height:100%; margin-left:-100%;}
+
+.slider .panel li { width:25%; height:100%; float:left; color:#fff; font-size:30px;}
+
+.panel li:nth-child(1) { background-color:red;}
+.panel li:nth-child(2) { background-color:blue;}
+.panel li:nth-child(3) { background-color:green;}
+.panel li:nth-child(4) { background-color:yellow;}
+
+
+.btn { position:absolute; bottom:30px; left:50%; margin-left:-70px;}
+
+.btn li  { float:left; width:20px; height:20px; 
+            background-color:cadetblue; border-radius:50%;
+            text-indent:-9999px; margin-right:20px;
+            cursor:pointer;
+}
+
+.btn .on { background-color:#000;}
+
+.btn li:hover { background-color:#000;}
+
+.btn li:last-child { margin-right:0px;}
+
+.prev { position:absolute; left:30px; top:50%; width:30px; height:30px; background-color: aqua; margin-top:-15px;}
+
+.next { position:absolute; right:30px; top:50%; width:30px; height:30px; background-color: aqua; margin-top:-15px;}
+
+
+
+
+
+
+
