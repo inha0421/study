@@ -1,6 +1,31 @@
 $(document).ready(function(){
 
 
+    /////////////////////// menu ul 구현 //////////////////////
+
+    $(".menu >li").mouseenter(function(){
+
+//        var list =$(this).index();
+
+        $(this).children("ul").stop().slideDown();
+
+    });
+
+    $(".menu >li").mouseleave(function(){
+
+        $(".menu >li >ul").stop().slideUp(500);
+
+    });
+
+
+
+
+
+
+
+    ////////////////////// 슬라이더 구현 /////////////////////
+
+
     //전역변수 선언
 
     var i = $(".btn on").index();
