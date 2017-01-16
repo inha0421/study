@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * { margin:0px; padding:0px;}
+        .header { width:1280px; height:200px; margin:0 auto; background-color:aqua; font-size:100px; color:#000;}
+        .content { width:1280px; height:500px; margin:0 auto; background-color:coral;font-size:100px; color:#000;}
+        .footer { width:1280px; height:300px; margin:0 auto; background-color: chartreuse;font-size:100px; color:#000;}
+
+        .toggle { width:500px; height:100%; position:fixed; right:-500px; top:0px; background-color:rgba(0,0,0,0.5); color:red; transition:all 0.5s; font-size:50px;}
+
+        .toon { right:0px;}
+
+        .toggle h2 { width:100px; height:50px; background-color:cornflowerblue; position:absolute; top:50%; margin-top:-25px; text-align:center; line-height:50px; left:-100px; color:#fff; cursor:pointer; font-size:15px; }
+
+    </style>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $(".toggle h2").click(function(){
+
+                $(".toggle").toggleClass("toon");
+
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+    <div class="toggle">
+        <h2>toggle</h2>
+        <div class="box">
+            오늘실습 예제
+        </div>
+    </div>
+    <div class="header">
+        상단
+    </div>
+    <div class="content">
+        중단
+    </div>
+    <div class="footer">하단</div>
+</body>
+</html>
