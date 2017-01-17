@@ -76,11 +76,12 @@ $(document).ready(function(){
 
     $(".pause").click(function(){
 
-//        $(".pause").toggleClass("play");
+        $(".pause").toggleClass("play");
 
         if(j==0){
 
             clearInterval(auto);
+
             j = 1;
         }
 
@@ -100,7 +101,7 @@ $(document).ready(function(){
                 $(".btn li").removeClass("on");
                 $(".btn li").eq(i).addClass("on");
 
-            },1500);
+            },2000);
 
             j = 0;
         }

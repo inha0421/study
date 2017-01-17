@@ -263,10 +263,13 @@ header .menu li a{
 .slider .btn li:hover a{
     background-position: right;
 }
-.slider p{
+
+.slider >div p{
     float: left;
+    cursor: pointer;
 }
 .play {
+    display: block;
     width: 9px;
     height: 13px;
     background-image: url(../img/slider/btn_play.png);

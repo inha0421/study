@@ -17,13 +17,11 @@ $(document).ready(function(){
         else{
 
             $(".acodi .menu >li span").siblings("ul").slideUp(500);
-
+            $(".acodi .menu >li span").removeClass("on");
 
 
             $(this).siblings("ul").slideDown(500);//형제 ul등장 후
             $(this).addClass("on"); //on 클래스 추가
-
-                        $(".acodi .menu >li span").siblings("ul").removeClass("on");
         }
 
     });
