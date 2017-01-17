@@ -2,3 +2,45 @@
 ul { list-style:none;}
 a { text-decoration:none;}
 img { border:none;}
+
+
+.acodi{
+    width: 200px;
+    margin: 0 auto;
+}
+
+.acodi .menu > li span{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: aliceblue;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    color: dodgerblue;
+    border-bottom : 1px solid #dadada;
+    box-sizing: border-box;
+}
+
+
+.acodi .menu >li ul a{
+    display: block;
+    width: 200px;
+    height: 30px;
+    background-color: lightpink;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.acodi .menu >li ul{
+    display: none;
+}
+
+.acodi .menu >li span.on { /*클래스를 붙여쓰면 span인데 on이 붙은 애*/
+    background-color: skyblue;
+    color: #fff;
+}
