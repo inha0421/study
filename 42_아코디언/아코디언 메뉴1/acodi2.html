@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>아코디언메뉴2</title>
+    <style>
+        * { margin:0px; padding:0px;}
+        ul,li { list-style:none;}
+        a { text-decoration:none;}
+        .acodimenu { width:200px; margin:60px auto; border:1px solid #2e9ff5;}
+        .acodimenu > ul > li > a { display:block; width:100%; height:40px; font-size:15px; font-family:"arial"; font-weight:bold;  line-height:40px; color:#fff; background-color:#2e9fda; text-align:center;}
+        .acodimenu > ul > li > .on { color:#999;}
+        .acodimenu > ul > li > ul > li > a { display:block; width:100%; height:30px; font-size:15px; color:#fff; font-family:"arial"; line-height:30px; text-align:center; 
+        background-color:deepskyblue; border-top:1px solid #fff; }
+        
+        .acodimenu > ul > li > ul { display:none;}
+        /* .acodimenu > ul > li:nth-child(1) > ul { display:block;} */
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            
+            $(".acodimenu > ul > li > a").on("click",function(e){
+               
+                e.preventDefault();
+
+                if($(this).hasClass("on")){
+                    
+                    $(this).siblings("ul").stop().slideUp(500);
+                    $(this).removeClass("on");
+                }
+                else {
+                    
+                    $(this).siblings("ul").stop().slideDown(500);
+                    $(this).addClass("on");
+                }
+                
+                
+            });
+            
+            
+            
+        });
+    </script>
+</head>
+<body>
+    <div class="acodimenu">
+        <ul>
+            <li><a href="#">Menu1</a>
+                <ul>
+                    <li><a href="#">Menu1-1</a></li>
+                    <li><a href="#">Menu1-2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu2</a>
+                <ul>
+                    <li><a href="#">Menu2-1</a></li>
+                    <li><a href="#">Menu2-2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu3</a>
+                <ul>
+                    <li><a href="#">Menu3-1</a></li>
+                    <li><a href="#">Menu3-2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu4</a>
+                <ul>
+                    <li><a href="#">Menu4-1</a></li>
+                    <li><a href="#">Menu4-2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu5</a>
+                <ul>
+                    <li><a href="#">Menu5-1</a></li>
+                    <li><a href="#">Menu5-2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

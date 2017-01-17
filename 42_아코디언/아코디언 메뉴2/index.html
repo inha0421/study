@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * { margin:0px; padding:0px;}
+        ul,li { list-style:none;}
+        a { text-decoration:none;}
+        img { border:none;}
+        
+        .left { width:198px; height: 100%; position:fixed; left:0px; top:0px; background-color:#35404f;}
+        .left h2 { text-align:center; margin-top:24px; margin-bottom:26px; font-size:20px; color:#fff;}
+        .left .lnb>li>a { display:block; height:46px; border-top:1px solid #45505c; border-bottom:1px solid #45505c; color:#fff; line-height:46px; text-indent:25px; background-image: url(on.png);    background-repeat:no-repeat; background-position:160px center; }
+        .left .lnb>li>.on {  background-image: url(off.png); background-color:#637080; }
+        .left .lnb>li>ul { display:none;}
+        .left .lnb>li>ul>li { margin-bottom:10px;}
+        .left .lnb>li>ul>li:nth-child(1) { margin-top:10px;}
+        .left .lnb>li>ul>li>a { display:block; color:#aaa; font-size:13px; text-indent:35px;}
+        
+        
+    </style>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script>
+     $(document).ready(function(){
+        
+         
+         $(".lnb>li>a").on("click",function(e){
+            
+             e.preventDefault();
+             if($(this).hasClass("on")) {
+                 
+                 $(this).siblings("ul").slideUp(500);
+                 $(this).removeClass("on");
+             }
+              else {
+                    
+                    $(this).siblings("ul").stop().slideDown(500);
+                    $(this).addClass("on");
+                }
+  
+         });  
+            
+     });
+    </script>
+</head>
+<body>
+    <div class="left">
+        <h2>메뉴 네비게이션</h2>
+        <ul class="lnb">
+            <li><a href="#">menu1</a>
+                <ul>
+                    <li><a href="#">sub01</a></li>
+                    <li><a href="#">sub02</a></li>
+                    <li><a href="#">sub03</a></li>
+                    <li><a href="#">sub04</a></li>
+                </ul>
+            </li>
+            <li><a href="#">menu2</a>
+                <ul>
+                    <li><a href="#">sub01</a></li>
+                    <li><a href="#">sub02</a></li>
+                    <li><a href="#">sub03</a></li>
+                    <li><a href="#">sub04</a></li>
+                </ul>
+            </li>
+            <li><a  href="#">menu3</a>
+                <ul>
+                    <li><a href="#">sub01</a></li>
+                    <li><a href="#">sub02</a></li>
+                    <li><a href="#">sub03</a></li>
+                    <li><a href="#">sub04</a></li>
+                </ul>
+            </li>
+            <li><a  href="#">menu4</a>
+                <ul>
+                    <li><a href="#">sub01</a></li>
+                    <li><a href="#">sub02</a></li>
+                    <li><a href="#">sub03</a></li>
+                    <li><a href="#">sub04</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
