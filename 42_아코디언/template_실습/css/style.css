@@ -2,3 +2,64 @@
 ul { list-style:none;}
 a { text-decoration:none;}
 img { border:none;}
+
+
+.acodi {
+    position: fixed;
+    left: 0px;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+}
+
+
+.acodi h1{
+    color: #fff;
+    display: block;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid #999;
+}
+
+.acodi .menu >li span{
+    display: block;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    background-image: url(../img/on.png);
+    background-repeat: no-repeat;
+    background-position: 170px;
+    padding-left: 0px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.acodi .menu >li span.on{
+    background-image: url(../img/off.png);
+}
+
+
+
+.acodi .menu >li >ul{
+    display: none;
+}
+
+
+
+.acodi .menu >li >ul li a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: aliceblue;
+    background-color: #666;
+    border-bottom: 1px solid #f9f9f9;
+}
