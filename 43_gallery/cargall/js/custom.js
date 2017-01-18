@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $(".list li").click(function(e){
+    $(".list li").mouseenter(function(e){
 
         e.preventDefault(); //기본값 정지
 

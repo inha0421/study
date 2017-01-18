@@ -7,21 +7,25 @@ $(document).ready(function(){
 
     /* header 높이 같이 토글처리 */
 
-    $("header .pos_left .list").click(function(){
+    $("header .pos_left .list").click(function(e){
+
+        e.preventDefault();
 
         if(li){
-            $("header").toggleClass("header_on");
+            $("header").removeClass("header_on");
         }
 
         else {
-           $("header").toggleClass("header_on");
+           $("header").addClass("header_on");
         }
     });
 
-    $("header .pos_left .search").click(function(){
+    $("header .pos_left .search").click(function(e){
+
+        e.preventDefault();
 
         if(sear){
-            $("header").toggleClass("header_on");
+           $("header").removeClass("header_on");
         }
 
         else {
@@ -29,12 +33,6 @@ $(document).ready(function(){
         }
 
     });
-
-
-
-
-
-
 
 
 
