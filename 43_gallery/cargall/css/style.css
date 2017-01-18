@@ -1,0 +1,76 @@
+* { margin:0px;padding:0px;}
+ul { list-style:none;}
+a { text-decoration:none;}
+img { border:none;}
+
+
+.gall{
+    width: 830px;
+    height: 415px;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: hidden;
+}
+.gall h1{
+    text-align: center;
+    padding: 15px 0px;}
+
+.view{
+    width: 442px;
+    height: 337px;
+    float: left;
+    border: 1px solid #999;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    padding: 4px;
+    margin: 0px 5px;
+}
+.view img{
+    width: 432px;
+    height: 327px;
+}
+.list{
+    float: left;
+    width: 370px;
+/*    height: 340px;*/
+}
+
+.list li{
+    float: left;
+    width: 118px;
+    height: 111px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: 1px solid #999;
+    padding: 4px;
+    box-sizing: border-box;
+    margin-right: 7px;
+    margin-bottom: 2px;
+}
+
+.list li:nth-child(3n){
+    margin-right: 0px;
+}
+
+.list li.on{
+    background-color: #333;
+}
+
+.list li.on img{
+    opacity: 1;
+    transition: all 2s;
+}
+
+
+.list li img{
+    width: 108px;
+    height: 101px;
+    opacity: 0.4;
+}
+.list li:hover img{
+
+}
+.list li a img{
+    width: 100%;
+    height: 100%;
+}

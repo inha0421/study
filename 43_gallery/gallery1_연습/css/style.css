@@ -5,9 +5,9 @@ img { border:none;}
 
 
 .gall{
-    width: 1000px;
-    height: 600px;
-    border: 1px solid red;
+    width: 830px;
+    height: 415px;
+    background-color: aqua;
     margin: 0 auto;
     margin-top: 100px;
 }

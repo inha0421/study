@@ -2,3 +2,71 @@
 ul { list-style:none;}
 a { text-decoration:none;}
 img { border:none;}
+
+
+.gall{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 650px;
+/*    background-color: aliceblue;*/
+}
+
+
+.gall h1{
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.slider {
+    width: 584px;
+    height: 111px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .panel{
+    width: 400%;
+    height: 100%;
+    margin-left: -100%;
+}
+
+.slider .panel >li{
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+
+.slider .panel >li >ul {
+
+}
+
+.slider .panel >li >ul li{
+    float: left;
+    width: 140px;
+    height: 105px;
+    border: 3px solid #000;
+    cursor: pointer;
+}
+
+.slider .panel >li >ul li img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.prev{
+    position: absolute;
+    left: 3px;
+    top : 50%;
+    margin-top: -18px;
+    cursor: pointer;
+}
+.next{
+    position: absolute;
+    right: 3px;
+    top : 50%;
+    margin-top: -18px;
+    cursor: pointer;
+}
