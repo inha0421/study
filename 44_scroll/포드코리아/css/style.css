@@ -2,3 +2,156 @@
 ul { list-style:none;}
 a { text-decoration:none;}
 img { border:none;}
+
+header{
+    width: 1438px;
+    height: 140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    top: 17px;
+    left: 50px;
+}
+
+header >ul{
+    float: right;
+    height: 70px;
+}
+header >ul li{
+    float: left;
+    margin-left: 15px;
+}
+
+header >ul li a{
+    line-height: 70px;
+    font-weight: bold;
+}
+header >ul li:nth-child(6) a{font-weight: normal;font-size: 13px;}
+header >ul li:nth-child(7) a{font-weight: normal;font-size: 13px;}
+
+
+.explore{
+    width: 1438px;
+    height: 70px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0px;
+    z-index: 5;
+}
+
+.explore.fix{
+    position: fixed;
+    top: 0px;
+}
+
+.explore .left{
+    width: 368px;
+    height: 100%;
+    background-color: #1b394e;
+    float: left;
+}
+
+.explore .left img{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    float: left;
+}
+
+.explore .left p{
+    line-height: 70px;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 0px;
+    left: 50px;
+    float: left;
+}
+
+.explore .right{
+    width: 1070px;
+    height: 100%;
+    background-color: #2d96cd;
+    float: left;
+}
+
+.explore .right ul{
+    float: right;
+}
+
+.explore .right ul li{
+    float: left;
+    color: #fff;
+    line-height: 70px;
+    font-size: 17px;
+    margin-right: 10px;
+    background-image: url(../img/back2.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 0px 20px;
+}
+
+.slider {
+    width: 1438px;
+    height: 493px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider .panel{
+    width: 300%;
+    height: 100%;
+}
+.slider .panel li{
+    float: left;
+    width: 33.333%;
+    height: 100%;
+}
+
+
+.slider .panel li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slider .panel .p1 a{background-image: url(../img/slider01.jpg);}
+.slider .panel .p2 a{background-image: url(../img/slider02.jpg);}
+.slider .panel .p3 a{background-image: url(../img/slider03.jpg);}
+
+.slider .navi{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -32px;
+}
+.slider .navi li{
+    float: left;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #dadada;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.slider .navi li.on{
+    background-color: #333;
+}
+
+
+
+.box{
+    width: 1438px;
+    height: 1500px;
+    background-color: lightcyan;
+    margin: 0 auto;
+
+}
