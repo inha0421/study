@@ -12,11 +12,11 @@ $(document).ready(function(){
         e.preventDefault();
 
         if(li){
-            $("header").removeClass("header_on");
+            $("header").toggleClass("header_on");
         }
 
         else {
-           $("header").addClass("header_on");
+           $("header").toggleClass("header_on");
         }
     });
 
@@ -25,7 +25,7 @@ $(document).ready(function(){
         e.preventDefault();
 
         if(sear){
-           $("header").removeClass("header_on");
+           $("header").toggleClass("header_on");
         }
 
         else {
