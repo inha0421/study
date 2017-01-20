@@ -1,0 +1,325 @@
+* { margin:0px;padding:0px;}
+ul { list-style:none;}
+a { text-decoration:none;}
+img { border:none;}
+
+
+header {
+    width: 100%;
+    height: 95px;
+    border-bottom: 2px solid #dadada;
+    background-color: #fff;
+    z-index: 6;
+}
+
+header.fix{
+    position: fixed;
+    top : 0px;
+}
+
+.topWrap{
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.topWrap .logo{
+    position: absolute;
+    left: 0px;
+    top: 35px;
+
+}
+
+.topWrap .member{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.topWrap .member li{
+    float: left;
+    height: 20px;
+    padding: 0px 5px;
+}
+.topWrap .member li:first-child{
+    background-image: url(../img/top/ico_language.png);
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+    padding-left: 15px;
+}
+.topWrap .member li a{
+    line-height: 15px;
+    color: #666;
+    font-size: 13px;
+}
+.topWrap .member li:last-child a{
+    color: #3badb5;
+    font-weight: bold;
+}
+.topWrap .menu{
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+    text-indent: -9999px;
+}
+.topWrap .menu li{
+    float: left;
+    margin: 0px 20px;
+}
+.topWrap .menu li:last-child{margin-right: 0px; }
+.topWrap .menu li a{
+    display: block;
+    height: 24px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.topWrap .menu li:nth-child(1) a{
+    width:50px;
+    background-image:url(../img/top/menu_brand.jpg);
+}
+.topWrap .menu li:nth-child(2) a{
+    width:131px;
+    background-image:url(../img/top/menu_medicaladviser.jpg);
+}
+
+.topWrap .menu li:nth-child(3) a{
+    width:70px;
+    background-image:url(../img/top/menu_product.jpg);
+}
+
+.topWrap .menu li:nth-child(4) a{
+    width:89px;
+    background-image:url(../img/top/menu_community.jpg);
+}
+.topWrap .menu li:nth-child(5) a{
+    width:81px;
+    background-image:url(../img/top/menu_customer.jpg);
+}
+
+
+.topWrap .menu li:hover a{
+    background-position: 0px -26px;
+}
+
+/******************************************************/
+
+.slider{
+    width: 100%;
+    height: 460px;
+    position: relative;
+    overflow: hidden;
+}
+
+.panel{
+    width: 600%;
+    height: 100%;
+}
+
+.panel li{
+    width: 16.666%;
+    height: 100%;
+    float: left;
+}
+
+.panel li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.panel .p1 a{background-image : url(../img/slider/main_visual_10.png);}
+.panel .p2 a{background-image : url(../img/slider/main_visual_11.png);}
+.panel .p3 a{background-image : url(../img/slider/main_visual_12.png);}
+.panel .p4 a{background-image : url(../img/slider/main_visual_robicplus.jpg);}
+.panel .p5 a{background-image : url(../img/slider/main_visual_stella.jpg);}
+.panel .p6 a{background-image : url(../img/slider/main_visual_tera.jpg);}
+
+.navi{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -66.5px;
+}
+
+.navi li {
+    margin-right: 5px;
+    float: left;
+
+}
+
+.navi li a{
+    background-repeat: no-repeat;
+    background-image: url(../img/slider/visual_dot.png);
+    background-position: bottom center;
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+.navi li.on a{
+    background-position: top center;
+}
+
+
+
+/***************************************************/
+
+center{
+    width: 980px;
+    height: 1100px;
+    margin: 0 auto;
+}
+
+.mid{
+    width: 100%;
+    height: 340px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f4816e;
+    position: relative;
+}
+
+.mid ul li{
+    float: left;
+    margin-right: 22px;
+}
+.mid ul li:last-child{
+    margin-right: 0px;
+}
+
+
+.mid .title{
+    background-color: #fff;
+    position: absolute;
+    bottom : -20px;
+    left: 50%;
+    margin-left: -155px;
+    height: 40px;
+    width: 311px;
+}
+
+.mid .title h1{
+    color: #f4816e;
+    line-height: 40px;
+}
+
+
+
+/**************************************************/
+
+.story{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.story >div{
+    width :311px;
+    float: left;
+    font-size: 0px;
+    margin-right: 22px;
+}
+.story >div:last-child{
+    margin-right: 0px;
+}
+.story >div >img{
+    margin-bottom: 22px;
+}
+
+
+/*************************************************/
+
+.quick {
+    position: absolute;
+    top : 680px;
+    right: 00px;
+    width: 50px;
+    height: 140px;
+}
+
+.quick.fix{
+    position: fixed;
+    top: 96px;
+}
+
+
+.quick ul li a{
+    display: block;
+    width: 50px;
+    height: 70px;
+}
+
+
+.quick ul li:nth-child(1) a {
+    background-image: url(../img/right/layer_cafe.jpg);
+}
+
+.quick ul li:nth-child(2) a {
+    background-image: url(../img/right/layer_shop.jpg);
+}
+
+
+/***************************************************/
+
+
+footer{
+    width: 100%;
+    height: 112px;
+    background-color: #323f4d;
+}
+footer> div{
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.family{
+    position: absolute;
+    top : 40px;
+    right: 0px;
+    border: 1px solid #999;
+    width: 130px;
+}
+
+.family p{
+    color: #999;
+    font-size: 13px;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+
+.family ul{
+    background-color: #f9f9f9;
+    border: 1px solid #333;
+    position: absolute;
+    top: -163px;
+    left: -2px;
+    width: 132px;
+    display: none;
+}
+.family ul.toggle{
+    display: block;
+}
+
+.family ul li{
+    padding-left: 5px;
+}
+.family ul li a{
+    display: block;
+    color: #333;
+    font-size: 12px;
+
+}
+
+.family ul li:hover{
+    background-color: #999;
+}
+.family ul li:hover a{
+    color: blue;
+}

@@ -90,12 +90,7 @@ $(document).ready(function(){
         $("body").animate({"scrollTop":move});
 
 
-
     });
-
-
-
-
 
 
 
