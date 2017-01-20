@@ -18,22 +18,18 @@ $(document).ready(function(){
 
 
         if( sc >= b1 && sc < b2){
-            sc = b1;
             $(".right_menu li").removeClass("on");
             $(".right_menu li").eq(0).addClass("on");
         }
         else if( sc >= b2 && sc < b3){
-            sc = b2;
             $(".right_menu li").removeClass("on");
             $(".right_menu li").eq(1).addClass("on");
         }
         else if( sc >= b3 && sc < b4){
-            sc = b3;
             $(".right_menu li").removeClass("on");
             $(".right_menu li").eq(2).addClass("on");
         }
         else if( sc >= b4){
-            sc = b4;
             $(".right_menu li").removeClass("on");
             $(".right_menu li").eq(3).addClass("on");
         }
