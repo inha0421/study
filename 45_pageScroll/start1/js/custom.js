@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
 
-    var i = $(".right_menu .on").index();
-    var len = $(".right_menu li").length;
-
     var b1 = $(".box1").offset().top;
     var b2 = $(".box2").offset().top;
     var b3 = $(".box3").offset().top;

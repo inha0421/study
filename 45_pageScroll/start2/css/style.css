@@ -2,3 +2,84 @@
 ul { list-style:none;}
 a { text-decoration:none;}
 img { border:none;}
+
+div{
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    color: darkorange;
+    font-size: 50px;
+}
+header h1{
+    padding-top: 50px;
+}
+div h1{
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: darkblue;
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 500px;
+    opacity: 0.3;
+}
+header.fix{
+    position: fixed;
+    top : 0px;
+}
+
+.div1 {
+    background-color: lightblue;
+    height: 500px;
+}
+
+.div2 {
+    background-color: lightgreen;
+    height: 700px;
+}
+
+.div3 {
+    background-color: lightpink;
+    height: 600px;
+}
+
+.div4 {
+    background-color: lightyellow;
+    height: 800px;
+}
+
+.div5 {
+    background-color: lightskyblue;
+    height: 1000px;
+}
+
+
+.btn {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    margin-top: -85px;
+}
+
+.btn li a{
+    display: block;
+    border: 3px solid darkred;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.btn li.on a{
+    background-color: darkorange;
+}
+
+
