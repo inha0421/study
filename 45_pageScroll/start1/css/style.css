@@ -52,9 +52,11 @@ div h1{
     margin: 10px;
 }
 
+/*
 .right_menu li:hover a{
     background-color: darkorange;
 }
+*/
 
 .right_menu li.on a{
     background-color: darkorange;
