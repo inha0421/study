@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>스크롤 제어</title>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+                var box1 = $("#box1").offset().top;
+                var box2 = $("#box2").offset().top;
+                var box3 = $("#box3").offset().top;
+                var box4 = $("#box4").offset().top;
+                var box5 = $("#box5").offset().top;
+
+
+            $(document).scroll(function(){
+
+                var scroll = $(this).scrollTop();
+                if (scroll >= 500) {
+
+                   $(".header").addClass("fix");
+
+                }
+
+                else if(scroll < 500) {
+
+                    $(".header").removeClass("fix");
+                }
+
+
+                if( scroll > box1 && scroll < box2 ) {
+
+                    $(".rightmenu li").children("a").removeClass("on");
+                    $(".rightmenu li").eq(0).children("a").addClass("on");
+                }
+                else if ( scroll >= box2 && scroll < box3 ) {
+
+
+                    $(".rightmenu li").children("a").removeClass("on");
+                    $(".rightmenu li").eq(1).children("a").addClass("on");
+
+                }
+                else if ( scroll >= box3 && scroll < box4) {
+
+                    $(".rightmenu li").children("a").removeClass("on");
+                    $(".rightmenu li").eq(2).children("a").addClass("on");
+
+                }
+
+                else if ( scroll >= box4 && scroll < box5) {
+
+                    $(".rightmenu li").children("a").removeClass("on");
+                    $(".rightmenu li").eq(3).children("a").addClass("on");
+
+                }
+
+                else if ( scroll >= box5) {
+
+                    $(".rightmenu li").children("a").removeClass("on");
+                    $(".rightmenu li").eq(4).children("a").addClass("on");
+
+                }
+
+            });
+
+                $(".rightmenu li").click(function(e){
+                    e.preventDefault();
+                    var list = $(this).children("a").attr("href");
+                    var box = $(list).offset().top;
+                    $("body").animate({"scrollTop":box});
+
+                });
+        });
+    </script>
+
+    <style>
+        * { margin:0px; padding:0px;}
+        ul { list-style:none;}
+        a { text-decoration:none;}
+
+        #box1 { width:600px; height:500px; background-color:red; margin:0 auto; color:#fff; font-size:60px; }
+        #box2 { width:600px; height:700px; background-color:blue; margin:0 auto; color:#fff; font-size:60px;}
+        #box3 { width:600px; height:1000px; background-color:green; margin:0 auto; color:#fff; font-size:60px; }
+        #box4 { width:600px; height:800px; background-color:deeppink; margin:0 auto; color:#000; font-size:60px;}
+        #box5 { width:600px; height:1000px; background-color:coral; margin:0 auto; color:#fff; font-size:60px;}
+        .header { position:absolute; top:500px; width:600px;
+                    height:200px; left:50%; margin-left:-300px;
+                  background-color:rgba(0,0,0,0.3); color:#fff; font-size:60px;
+        }
+        .fix { position:fixed; top:0px;}
+
+        .rightmenu { position:fixed; top:50%;
+            margin-top:-75px; right:100px;}
+        .rightmenu li { margin-bottom:20px;}
+        .rightmenu li a {display:block; width:30px; height:30px;
+                         background-color:#999; text-indent:-9999px;
+                         border-radius:15px;
+
+        }
+        .rightmenu li .on { background-color:red;}
+    </style>
+
+</head>
+<body>
+    <div id="box1">11</div>
+    <div id="box2">22</div>
+    <div id="box3">33</div>
+    <div id="box4">44</div>
+    <div id="box5">55</div>
+    <div class="header">상단메뉴</div>
+    <ul class="rightmenu">
+        <li><a class="on" href="#box1">스크롤메뉴1</a></li>
+        <li><a href="#box2">스크롤메뉴2</a></li>
+        <li><a href="#box3">스크롤메뉴3</a></li>
+        <li><a href="#box4">스크롤메뉴4</a></li>
+        <li><a href="#box5">스크롤메뉴5</a></li>
+    </ul>
+</body>
+</html>
+
+
+
+

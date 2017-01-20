@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>스크롤제어</title>
+    <style>
+        * { margin:0px; padding:0px;}
+        ul  { list-style:none;}
+        a { text-decoration:none;}
+        #box1 { width:100%;height:500px; background-color: burlywood; color:#fff; font-size:30px;}
+        #box2 { width:100%;height:700px; background-color:aqua; color:#fff; font-size:30px;}
+        #box3 { width:100%;height:600px; background-color:brown; color:#fff; font-size:30px;}
+        #box4 { width:100%;height:800px; background-color:forestgreen; color:#fff; font-size:30px;}
+        #box5 { width:100%;height:1000px; background-color:coral; color:#fff; font-size:30px;}
+        .header { width:100%; height:200px; background-color:rgba(0,0,0,0.5); position:absolute; top:500px;  left:0px; color:#fff;}
+        .on2 { position: fixed; top:0px;}
+        .menu { position:fixed; top:50%; right:50px; margin-top:-75px; }
+        .menu li  { margin-bottom:10px; }
+        .menu li a { width:20px; height:20px; display:block; background-color:darkmagenta; border-radius:50%;}
+        .menu li .on { background-color:white;}
+    </style>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            var pos1 = $("#box1").offset().top;
+            var pos2 = $("#box2").offset().top;
+            var pos3 = $("#box3").offset().top;
+            var pos4 = $("#box4").offset().top;
+            var pos5 = $("#box5").offset().top;
+            $(document).on("scroll",function(){
+
+                var scroll = $(this).scrollTop();
+
+
+
+                if(scroll >= 500) {
+
+                    $(".header").addClass("on2");
+
+                }
+                else if(scroll < 500) {
+
+                    $(".header").removeClass("on2");
+                }
+
+                $(".menu li a").removeClass("on");
+
+
+                if(scroll >= pos1 && scroll<pos2) {
+
+                    $(".menu li").eq(0).children("a").addClass("on");
+                }
+                else if(scroll>=pos2 && scroll<pos3 ) {
+
+                    $(".menu li").eq(1).children("a").addClass("on");
+
+                }
+
+                else if(scroll>=pos3 && scroll<pos4 ) {
+
+                    $(".menu li").eq(2).children("a").addClass("on");
+
+                }
+
+                else if(scroll>=pos4 && scroll<pos5 ) {
+
+                    $(".menu li").eq(3).children("a").addClass("on");
+
+                }
+                else if(scroll>=pos5) {
+
+                    $(".menu li").eq(4).children("a").addClass("on");
+
+                }
+
+                $(".menu li a").on("click",function(e){
+
+                    e.preventDefault();
+                    var list = $(this).attr("href");
+                    var distance = $(list).offset().top;
+                    var speed = 500;
+                    $("body").stop().animate({"scrollTop":distance},speed);
+                });
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box1">BOX1</div>
+    <div id="box2">BOX2</div>
+    <div id="box3">BOX3</div>
+    <div id="box4">BOX4</div>
+    <div id="box5">BOX5</div>
+    <div class="header">상단</div>
+    <ul class="menu">
+        <li><a class="on" href="#box1"></a></li>
+        <li><a href="#box2"></a></li>
+        <li><a href="#box3"></a></li>
+        <li><a href="#box4"></a></li>
+        <li><a href="#box5"></a></li>
+    </ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
