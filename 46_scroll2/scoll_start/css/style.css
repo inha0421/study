@@ -2,3 +2,63 @@
 ul { list-style:none;}
 a { text-decoration:none;}
 img { border:none;}
+
+
+
+.boxWrap >div{
+    width: 100%;
+    height: 900px;
+}
+.box1{
+    background-color: lightcyan;
+}
+.box2{
+    background-color: lightsteelblue;
+}
+.box3{
+    background-color: lightskyblue;
+}
+.box4{
+    background-color: lightblue;
+}
+
+
+.menu{
+    position: fixed;
+    left: 0px;
+    top: 50%;
+    margin-top: -120px;
+}
+
+.menu li{
+    width: 150px;
+    height: 60px;
+    color: #000;
+    border-top: 1px solid #000;
+    text-align: right;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+
+.menu li.on{
+    font-size: 30px;
+    font-weight: bold;
+}
+.menu li:hover{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.menu .s1.on{ color:orange;border-top-color: orange;}
+.menu .s2.on{ color:hotpink;border-top-color: hotpink;}
+.menu .s3.on{ color:royalblue;border-top-color: royalblue;}
+.menu .s4.on{ color:salmon;border-top-color:salmon;}
+
+
+.menu .s1:hover{ color:orange;border-top-color: orange;}
+.menu .s2:hover{ color:hotpink;border-top-color: hotpink;}
+.menu .s3:hover{ color:royalblue;border-top-color: royalblue;}
+.menu .s4:hover{ color:salmon;border-top-color:salmon;}
