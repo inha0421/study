@@ -1,0 +1,4 @@
+{ color:#d4164c; border-color:#d4164c;}
+{ color:#fff; border-color:#fff;}
+{ color:#ffec6a; border-color:#ffec6a;}
+{ color:#005a89; border-color:#005a89;}
