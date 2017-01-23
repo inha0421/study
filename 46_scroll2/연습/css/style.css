@@ -2,3 +2,112 @@
 ul { list-style:none;}
 a { text-decoration:none;}
 img { border:none;}
+
+
+.logo{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+}
+
+.logo img {
+    width: 200px;
+    transition: all 0.3s;
+}
+.logo img:hover{
+    transform: rotate(360deg);
+}
+
+.boxWrap div{
+    width: 100%;
+    height: 900px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.boxWrap div a img{
+    transition: all 0.5s;
+}
+
+.boxWrap div a:hover img{
+    transform: scale(1.3);
+}
+
+
+.box1 {background-image: url(../img/game1.jpg);}
+.box2 {background-image: url(../img/game2.jpg);}
+.box3 {background-image: url(../img/game3.jpg);}
+.box4 {background-image: url(../img/game4.jpg);}
+
+.logo1 {
+    position: absolute;
+    top: 50%;
+    margin-top: -118px;
+    left: 50%;
+    margin-left: -350px;
+    display: none;
+}
+
+.logo2 {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: none;
+}
+
+.logo3 {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -325px;
+    display: none;
+}
+
+.logo4 {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+}
+
+
+
+.menu {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    margin-top: -175px;
+    width: 250px;
+}
+
+.menu li{
+    text-align: center;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.menu li h1{
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+
+
+
+
+
+.menu .m1.on h1{
+    color: orange;
+}
+.menu .m2.on h1{
+    color : dodgerblue;
+}
+.menu .m3.on h1{
+    color: yellowgreen;
+}
+.menu .m4.on h1{
+    color: darkred;
+}
