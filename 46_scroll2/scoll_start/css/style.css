@@ -5,21 +5,57 @@ img { border:none;}
 
 
 
+.logo{
+    position: fixed;
+    top : 30px;
+    left: 30px;
+    z-index: 5;
+}
+
+
+.logo img{
+    width: 200px;
+}
+
 .boxWrap >div{
     width: 100%;
     height: 900px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
 }
-.box1{
-    background-color: lightcyan;
+.box1{background-image:url(../img/bg1.jpg);}
+.box2{background-image:url(../img/bg2.jpg);}
+.box3{background-image:url(../img/bg3.jpg);}
+.box4{background-image:url(../img/bg4.jpg);}
+
+.box1 h1{ color:#d4164c; border-color:#d4164c;}
+.box2 h1{ color:#fff; border-color:#fff;}
+.box3 h1{ color:#ffec6a; border-color:#ffec6a;}
+.box4 h1{ color:#005a89; border-color:#005a89;}
+
+
+
+
+
+
+
+
+.boxWrap div h1{
+    position: absolute;
+    top : 50%;
+    left: 300px;
+    font-size: 50px;
+    margin-top: -25px;
 }
-.box2{
-    background-color: lightsteelblue;
-}
-.box3{
-    background-color: lightskyblue;
-}
-.box4{
-    background-color: lightblue;
+.boxWrap div p{
+    font-size: 17px;
+    position: absolute;
+    top : 50%;
+    margin-top: 40px;
+    left: 300px;
 }
 
 
@@ -31,10 +67,10 @@ img { border:none;}
 }
 
 .menu li{
-    width: 150px;
+    width: 220px;
     height: 60px;
     color: #000;
-    border-top: 1px solid #000;
+    border-top: 2px solid #000;
     text-align: right;
     cursor: pointer;
     font-size: 20px;
@@ -43,22 +79,22 @@ img { border:none;}
 
 
 .menu li.on{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 .menu li:hover{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 
-.menu .s1.on{ color:orange;border-top-color: orange;}
-.menu .s2.on{ color:hotpink;border-top-color: hotpink;}
-.menu .s3.on{ color:royalblue;border-top-color: royalblue;}
-.menu .s4.on{ color:salmon;border-top-color:salmon;}
+.menu .s1.on{ color:#d4164c; border-color:#d4164c;}
+.menu .s2.on{ color:#fff; border-color:#fff;}
+.menu .s3.on{ color:#ffec6a; border-color:#ffec6a;}
+.menu .s4.on{ color:#005a89; border-color:#005a89;}
 
 
-.menu .s1:hover{ color:orange;border-top-color: orange;}
-.menu .s2:hover{ color:hotpink;border-top-color: hotpink;}
-.menu .s3:hover{ color:royalblue;border-top-color: royalblue;}
-.menu .s4:hover{ color:salmon;border-top-color:salmon;}
+.menu .s1:hover{ color:#d4164c; border-color:#d4164c;}
+.menu .s2:hover{ color:#fff; border-color:#fff;}
+.menu .s3:hover{ color:#ffec6a; border-color:#ffec6a;}
+.menu .s4:hover{ color:#005a89; border-color:#005a89;}
