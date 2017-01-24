@@ -225,6 +225,11 @@ $(document).ready(function(){
 
     });
 
+    $(".quick p").click(function(){
+
+        $(".quick").toggleClass("fix");
+
+    });
 
 
 });

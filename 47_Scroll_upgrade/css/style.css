@@ -45,6 +45,8 @@ section{
 .tab_menu li.on{
     background-color: dodgerblue;
     color: orange;
+    border: 2px solid #fff;
+    box-sizing: border-box;
 }
 
 .tab_box{
@@ -167,12 +169,12 @@ section{
     width: 15px;
     height: 15px;
     margin-right: 10px;
-    border: 3px solid orange;
+    border: 3px solid darkorange;
     border-radius: 50%;
     cursor: pointer;
 }
 .btn li.on{
-    background-color: darkorange;
+    background-color: orange;
 }
 
 .slider p{
@@ -239,15 +241,15 @@ section{
     background-color: orange;
     width: 80px;
     height: 160px;
-/*    position: absolute;*/
     position: fixed;
-    left: 00px;
+    left: -50px;
     top: 50%;
     margin-top: -80px;
 }
 
 .quick.fix{
     position: fixed;
+    left: 0px;
 }
 
 
