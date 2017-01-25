@@ -1,0 +1,215 @@
+* { margin:0px;padding:0px;}
+ul { list-style:none;}
+a { text-decoration:none;}
+img { border:none;}
+
+
+/*상단메뉴 고정부분*/
+header { position:fixed;
+         top:0px;
+         width:100%;
+         height:100px;
+         background-color:#000;
+         z-index:10;
+}
+
+header .menu { position:absolute;
+left:50%; top:0px; margin-left:-400px;
+}
+
+header .menu li {
+    float:left;
+}
+header .menu li a { display:block;
+width:200px; height:100px;
+    background-color:aqua;
+    text-align:center; line-height:100px;
+    color:#000;
+}
+
+header .menu li a:hover {
+    background-color:bisque;
+}
+
+
+/*상단메뉴 고정부분끝*/
+
+
+.wrap > div { width:100%; height:800px;
+              position:relative;
+}
+
+/*박스1(첫번째 구역) 시작*/
+#box1 { background-color:cadetblue;
+
+}
+
+.slider { width:500px; height:500px;
+          position:absolute; top:50%;
+          left:50%; margin-top:-250px;
+          margin-left:-250px;
+}
+
+.panel { width:100%; height:100%;
+         position:relative;
+}
+
+.panel li { position:absolute; top:0px;
+            left:0px; width:100%;
+            height:100%; background-color:rgba(0,0,0,0.5);
+            color:#fff;
+            text-align:center; line-height:500px;
+            display:none;}
+
+.panel li.s1 { display:block;}
+
+.btn { position:absolute; left:50%;
+       bottom:20px; margin-left:-90px;
+}
+
+.btn li { float:left; width:20px; height:20px; margin-right:20px;
+background-color:red;
+text-indent:-9999px;
+cursor:pointer;
+}
+
+.btn li.on { background-color:#fff;}
+
+.prev { width:30px; height:30px; background-color:blanchedalmond; position:absolute;
+top:50%; margin-top:-15px; left:30px;
+}
+
+.next { width:30px; height:30px; background-color:blanchedalmond; position:absolute;
+top:50%; margin-top:-15px; right:30px;
+}
+
+/*박스1(첫번째 구역) 끝*/
+
+
+/*박스2(두번째 구역) 시작*/
+
+
+#box2 {
+        background-color:chartreuse;
+
+}
+
+.tabbox { width:800px; height:500px;
+          position:absolute; left:50%;
+          top:50%; margin-left:-400px;
+          margin-top:-250px;
+}
+
+.tabbox > ul { overflow:hidden;}
+.tabbox > ul li { float:left; width:200px;
+                   height:50px;
+                   text-align:center;
+                   line-height:50px;
+                   background-color:#000;
+                   color:#fff;
+                   cursor:pointer;
+}
+
+.tabbox > ul li.on { background-color:brown;
+                     color:yellow;
+}
+
+
+.tab  { width:100%; height:430px; position:relative; margin-top:20px;}
+
+.tab > ul { position:absolute; top:0px; left:0px; display:none;}
+
+.tab > ul:first-child { display:block;}
+
+.tab > ul li { float:left; width:185px;
+height:450px; margin-right:20px; background-color:#fff;}
+
+
+
+.tab > ul li:last-child { margin-right:0px;
+
+}
+
+/*박스2(두번째 구역) 끝*/
+
+
+/*박스3(세번째 구역) 시작*/
+
+#box3 {background-color:coral;}
+
+.box3_wrap { width:500px; height:500px;
+ left:50%; top:50%; position:absolute;
+margin-left:-250px; margin-top:-250px;
+}
+
+.box3_view { width:100%; height:100%;
+             position:relative;
+}
+
+.box3_view > div { background-color:#000;
+}
+
+.top { width:0%; height:3px; position:absolute; left:0px; top:0px;}
+
+.right { width:3px; height:0%;
+position:absolute; right:0px; top:0px;}
+
+.bottom { width:0%; height:3px; position:absolute; right:0px; bottom:0px;}
+
+.left { width:3px; height:0%; position:absolute; left:0px; bottom:0px;}
+
+.movie { width:100%; height:100%; position:absolute; top:0px; left:0px; display:none;}
+
+.play { width:100px; height:100px;
+        margin:30px auto; background-color:aquamarine;
+        text-align:center; line-height:100px;
+        cursor:pointer;
+}
+
+.close { width:30px; height:30px;
+        background-color:aqua;
+        text-align:center; line-height:30px;
+        position:absolute; left:0px; top:0px; cursor:pointer;
+}
+
+/*박스3(세번째 구역) 끝*/
+
+
+/*박스4(네번째 구역) 시작*/
+#box4 { background-color:cornsilk;}
+
+.box4_wrap { position:absolute; top:50%; margin-top:-300px;
+left:50%;   margin-left:-325px;
+}
+
+.gall { width:650px;}
+
+
+.slider02 { width:584px; height:111px; margin:0 auto;
+          position:relative; overflow:hidden;
+}
+
+.slider02 .panel02 { width:400%; height:100%; margin-left:-100%;}
+
+.slider02 .panel02 > li { width:25%; height:100%; float:left;}
+
+.slider02 .panel02 > li ul li { width:140px;
+                            height:105px;
+                            border:3px solid #000;
+                            float:left;}
+
+.slider02 .panel02 > li ul li img { width:100%; height:100%;}
+
+.slider02 .prev2 { position:absolute; top:50%; left:3px;
+                margin-top:-16px;
+}
+
+.slider02 .next2 { position:absolute; top:50%; right:3px;
+                margin-top:-16px;
+}
+
+/*박스4(네번째 구역) 끝*/
+
+
+
+
